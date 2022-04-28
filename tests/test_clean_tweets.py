@@ -42,6 +42,9 @@ class TestCleanTweet(unittest.TestCase):
         for c in column_names:
             self.assertNotIn(c, columns)
 
+    def test_drop_unwanted_rows(self):
+        
+
 
 
 
