@@ -6,19 +6,7 @@ sys.path.append(os.path.abspath(os.path.join('../..')))
 
 from fix_clean_tweets_dataframe import Clean_Tweets
 
-columns = ['created_at', 'source', 'original_text','clean_text', 'sentiment','polarity','subjectivity', 'lang', 'favorite_count', 'retweet_count',
-    'original_author', 'screen_count', 'followers_count','friends_count','possibly_sensitive', 'hashtags', 'user_mentions', 'place', 'place_coord_boundaries']
-
-
 class TestCleanTweet(unittest.TestCase):
-    """
-		A class for unit-testing function in the fix_clean_tweets_dataframe.py file
-
-		Args:
-        -----
-			unittest.TestCase this allows the new class to inherit
-			from the unittest module
-	"""
 
     def setUp(self) -> pd.DataFrame:
         filename = "data/cleaned_fintech_data.csv"
@@ -43,7 +31,7 @@ class TestCleanTweet(unittest.TestCase):
             self.assertNotIn(c, columns)
 
     def test_drop_unwanted_rows(self):
-        
+        pass
 
 
 
