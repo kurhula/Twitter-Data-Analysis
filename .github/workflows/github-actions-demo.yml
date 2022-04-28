@@ -23,8 +23,8 @@ jobs: # list of jobs to do
           ls ${{ github.workspace }}
       - name: Install requirements
         run: pip install -r requirements.txt
-      - name: Run test_extract_dataframe
-        run: python -m unittest tests/test_extract_dataframe.py
       - name: Run test_clean_tweets
         run: python -m unittest tests/test_clean_tweets.py
+      - name: Run test_extract_dataframe
+        run: python -m unittest tests/test_extract_dataframe.py
       - run: echo "🍏 This job's status is ${{ job.status }}."
