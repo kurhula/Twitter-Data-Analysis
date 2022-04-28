@@ -43,7 +43,7 @@ class TestTweetDfExtractor(unittest.TestCase):
     def test_find_created_time(self):
         created_at = ['Fri Jun 18 17:55:49 +0000 2021', 'Fri Jun 18 17:55:59 +0000 2021', 'Fri Jun 18 17:56:07 +0000 2021',
          'Fri Jun 18 17:56:10 +0000 2021', 'Fri Jun 18 17:56:20 +0000 2021']
-        given = '' #self.df.find_created_time()
+        given = self.df.find_created_time()
         self.assertEqual(given, created_at)
     #
     # def test_find_source(self):
