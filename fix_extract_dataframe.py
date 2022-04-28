@@ -30,8 +30,11 @@ class TweetDfExtractor:
     dataframe
     """
     def __init__(self, tweets_list):
-
         self.tweets_list = tweets_list
+
+    def find_created_time(self)->list:
+        created_at = [x['created_at'] for x in self.tweets_list]
+        return created_at
 
     # an example function
     # def find_statuses_count(self)->list:
