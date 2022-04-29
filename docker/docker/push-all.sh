@@ -1,0 +1,1 @@
+git push madyondza master & git push nextwave master & git push kurhula master && git push bitbucket master
